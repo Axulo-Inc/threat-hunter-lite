@@ -11,7 +11,7 @@ A lightweight log analysis tool for detecting suspicious activities in system lo
 
 ## Installation
 \`\`\`bash
-git clone https://github.com/yourusername/threat-hunter-lite
+git clone https://github.com/Axulo-Inc/threat-hunter-lite
 cd threat-hunter-lite
 pip install -r requirements.txt
 \`\`\`
