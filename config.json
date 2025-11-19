@@ -1,0 +1,17 @@
+{
+  "analysis": {
+    "failed_login_threshold": 5,
+    "time_window_minutes": 10,
+    "known_users": ["root", "admin", "administrator", "system", "ubuntu"]
+  },
+  "reporting": {
+    "default_format": "json",
+    "include_mitre_mapping": true,
+    "risk_calculation": "weighted"
+  },
+  "suspicious_ips": [
+    "10.0.0.100",
+    "192.168.1.200",
+    "203.0.113.15"
+  ]
+}

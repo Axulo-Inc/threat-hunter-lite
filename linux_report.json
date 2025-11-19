@@ -1,0 +1,96 @@
+{
+  "threat_hunter_lite_report": {
+    "metadata": {
+      "generated_at": "2025-11-19T20:25:59.242592",
+      "version": "1.0",
+      "tool": "ThreatHunter Lite"
+    },
+    "summary": {
+      "total_detections": 8,
+      "risk_level": "HIGH",
+      "timestamp": "2025-11-19T20:25:59.242580",
+      "categories_affected": [
+        "repeated_failed_logins",
+        "unknown_user_creation",
+        "suspicious_ip_attempts",
+        "privilege_escalation"
+      ]
+    },
+    "detailed_findings": {
+      "repeated_failed_logins": [
+        {
+          "ip_address": "10.0.0.100",
+          "username": "root",
+          "attempt_count": 5,
+          "time_window": "10 minutes",
+          "mitre_technique": "T1110 - Brute Force",
+          "risk_score": 85,
+          "evidence": "5 failed login attempts from 10.0.0.100"
+        }
+      ],
+      "unknown_user_creation": [
+        {
+          "username": "name=suspicious_linux",
+          "timestamp": "1900-01-15 10:35:00",
+          "source": "unknown",
+          "mitre_technique": "T1136 - Create Account",
+          "risk_score": 75,
+          "evidence": "New user account created: name=suspicious_linux"
+        }
+      ],
+      "usb_device_connections": [],
+      "suspicious_ip_attempts": [
+        {
+          "ip_address": "10.0.0.100",
+          "timestamp": "1900-01-15 10:30:00",
+          "event_type": "Unknown",
+          "mitre_technique": "T1078 - Valid Accounts",
+          "risk_score": 90,
+          "evidence": "Connection from known suspicious IP: 10.0.0.100"
+        },
+        {
+          "ip_address": "10.0.0.100",
+          "timestamp": "1900-01-15 10:30:01",
+          "event_type": "Unknown",
+          "mitre_technique": "T1078 - Valid Accounts",
+          "risk_score": 90,
+          "evidence": "Connection from known suspicious IP: 10.0.0.100"
+        },
+        {
+          "ip_address": "10.0.0.100",
+          "timestamp": "1900-01-15 10:30:02",
+          "event_type": "Unknown",
+          "mitre_technique": "T1078 - Valid Accounts",
+          "risk_score": 90,
+          "evidence": "Connection from known suspicious IP: 10.0.0.100"
+        },
+        {
+          "ip_address": "10.0.0.100",
+          "timestamp": "1900-01-15 10:30:03",
+          "event_type": "Unknown",
+          "mitre_technique": "T1078 - Valid Accounts",
+          "risk_score": 90,
+          "evidence": "Connection from known suspicious IP: 10.0.0.100"
+        },
+        {
+          "ip_address": "10.0.0.100",
+          "timestamp": "1900-01-15 10:30:04",
+          "event_type": "Unknown",
+          "mitre_technique": "T1078 - Valid Accounts",
+          "risk_score": 90,
+          "evidence": "Connection from known suspicious IP: 10.0.0.100"
+        }
+      ],
+      "privilege_escalation": [
+        {
+          "timestamp": "1900-01-15 10:40:00",
+          "username": "unknown",
+          "source_ip": "unknown",
+          "mitre_technique": "T1068 - Privilege Escalation",
+          "risk_score": 80,
+          "evidence": "Privilege escalation attempt by unknown"
+        }
+      ]
+    }
+  }
+}
